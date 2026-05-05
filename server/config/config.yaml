@@ -1,0 +1,30 @@
+server:
+  port: 8088
+  mode: debug
+
+database:
+  type: sqlite
+  sqlite:
+    dbname: mindoc.db
+  mysql:
+    host: localhost
+    port: 3306
+    username: root
+    password: password
+    dbname: mindoc
+    charset: utf8mb4
+
+jwt:
+  secret: mindoc-jwt-secret-key-change-in-production
+  expire: 24
+
+site:
+  name: MinDoc 在线文档管理系统
+  language: zh-CN
+  anonymous_access: false
+  enable_captcha: true
+
+admin:
+  username: admin
+  password: admin123
+  email: admin@example.com
